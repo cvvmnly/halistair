@@ -5,7 +5,7 @@
 <head>
   <title>heathaf</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=640">
   <meta name="color-scheme" content="light only">
   <meta name="description" content="rp purposes">
   <meta property="og:site_name" content="heathaf">
@@ -776,7 +776,7 @@
       overflow: hidden;
       position: relative;
       z-index: 2;
-      padding: 1rem;
+      padding: 0.25rem;
     }
 
     .site-main {
@@ -803,7 +803,7 @@
     }
 
     .site-main>.inner {
-      --padding-horizontal: 1rem;
+      --padding-horizontal: 0.25rem;
       --padding-vertical: 1rem;
       --spacing: 0.75rem;
       --width: 40rem;
@@ -956,7 +956,7 @@
 
     .container-component.instance-1>.wrapper>.inner {
       --gutters: 2rem;
-      --padding-horizontal: 2rem;
+      --padding-horizontal: 0.5rem;
       --padding-vertical: 2rem;
       padding: var(--padding-vertical) var(--padding-horizontal);
     }
@@ -1104,7 +1104,7 @@
 
     .container-component.instance-4>.wrapper>.inner {
       --gutters: 2.5rem;
-      --padding-horizontal: 1rem;
+      --padding-horizontal: 0.5rem;
       --padding-vertical: 1rem;
       padding: var(--padding-vertical) var(--padding-horizontal);
     }
@@ -1276,7 +1276,7 @@
 
     .container-component.instance-5>.wrapper>.inner {
       --gutters: 2.5rem;
-      --padding-horizontal: 1rem;
+      --padding-horizontal: 0.5rem;
       --padding-vertical: 1rem;
       padding: var(--padding-vertical) var(--padding-horizontal);
     }
@@ -1436,7 +1436,7 @@
 
     .container-component.instance-3>.wrapper>.inner {
       --gutters: 2.5rem;
-      --padding-horizontal: 1rem;
+      --padding-horizontal: 0.5rem;
       --padding-vertical: 1rem;
       padding: var(--padding-vertical) var(--padding-horizontal);
     }
@@ -1596,7 +1596,7 @@
 
     .container-component.instance-2>.wrapper>.inner {
       --gutters: 2.5rem;
-      --padding-horizontal: 1rem;
+      --padding-horizontal: 0.5rem;
       --padding-vertical: 0.25rem;
       padding: var(--padding-vertical) var(--padding-horizontal);
     }
@@ -3371,35 +3371,20 @@
     }
 
     @media (max-width: 736px) {
+      html {
+        font-size: 10pt;
+      }
+
       .site-wrapper {
         padding: 0rem;
       }
 
-      .site-main {
-        max-width: 100%;
-      }
-
       .site-main>.inner {
-        max-width: 100%;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
-
-      .content-stage {
-        width: calc(100% / 1.01);
-        margin: 0 auto;
-        transform: scale(1.01);
-        transform-origin: top center;
-      }
-
-      .content-stage > section {
-        width: 100%;
-      }
-
-      .site-main>.inner {
+        --width: 100%;
         --padding-horizontal: 0.25rem;
         --padding-vertical: 1rem;
         --spacing: 0.75rem;
+        width: 100%;
       }
 
       .site-main>.inner>*>.full {
@@ -3422,7 +3407,7 @@
 
       .container-component.instance-1>.wrapper>.inner {
         --gutters: 0.5rem;
-        --padding-horizontal: 1rem;
+        --padding-horizontal: 0.5rem;
         --padding-vertical: 2rem;
       }
 
@@ -3436,7 +3421,7 @@
 
       .container-component.instance-4>.wrapper>.inner {
         --gutters: 2.5rem;
-        --padding-horizontal: 1rem;
+        --padding-horizontal: 0.5rem;
         --padding-vertical: 1rem;
       }
 
@@ -3450,7 +3435,7 @@
 
       .container-component.instance-5>.wrapper>.inner {
         --gutters: 2.5rem;
-        --padding-horizontal: 1rem;
+        --padding-horizontal: 0.5rem;
         --padding-vertical: 1rem;
       }
 
@@ -3573,7 +3558,7 @@
 
       .container-component.instance-3>.wrapper>.inner {
         --gutters: 2.5rem;
-        --padding-horizontal: 1rem;
+        --padding-horizontal: 0.5rem;
         --padding-vertical: 1rem;
       }
 
@@ -3696,7 +3681,7 @@
 
       .container-component.instance-2>.wrapper>.inner {
         --gutters: 2.5rem;
-        --padding-horizontal: 1rem;
+        --padding-horizontal: 0.5rem;
         --padding-vertical: 0.25rem;
       }
 
@@ -4240,11 +4225,6 @@
       }
 
       .site-main>.inner {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
-
-      .site-main>.inner {
         --spacing: 0.65625rem;
       }
 
@@ -4273,11 +4253,6 @@
     @media (max-width: 360px) {
       .site-wrapper {
         padding: 0rem;
-      }
-
-      .site-main>.inner {
-        padding-left: 0.375rem;
-        padding-right: 0.375rem;
       }
 
       .site-main>.inner {
