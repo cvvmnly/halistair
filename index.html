@@ -5,7 +5,7 @@
 <head>
   <title>heathaf</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=640">
   <meta name="color-scheme" content="light only">
   <meta name="description" content="rp purposes">
   <meta property="og:site_name" content="heathaf">
@@ -694,6 +694,7 @@
 
     html {
       font-size: 17pt;
+      background-color: rgb(237, 237, 237);
     }
 
     u {
@@ -3409,22 +3410,6 @@
         --padding-vertical: 2rem;
       }
 
-      .container-component.instance-1.columns>.wrapper>.inner {
-        flex-flow: column !important;
-      }
-
-      .container-component.instance-1.columns>.wrapper>.inner> :first-child {
-        margin-left: 0px !important;
-      }
-
-      .container-component.instance-1.columns>.wrapper>.inner>* {
-        padding-left: 0px !important;
-      }
-
-      .container-component.instance-1.columns>.wrapper>.inner> :last-child {
-        padding-bottom: 0px !important;
-      }
-
       .container-component.instance-4:not(:first-child) {
         margin-top: 0rem !important;
       }
@@ -5727,4 +5712,26 @@
 
       allSections.forEach(function (section) {
         section.classList.remove('active');
-        sect
+        section.setAttribute('aria-hidden', 'true');
+        section.style.opacity = '0';
+        section.style.visibility = 'hidden';
+        section.style.pointerEvents = 'none';
+      });
+
+      if (headerElement) {
+        headerElement.style.transform = 'translateY(0)';
+      }
+
+      if (contentStage) {
+        contentStage.style.height = '0px';
+      }
+
+      updateHeaderReadout();
+      setInterval(updateHeaderReadout, 1000);
+      fetchHeaderWeather();
+      setInterval(fetchHeaderWeather, 600000);
+
+    });
+  </script>
+</body>
+</html>
