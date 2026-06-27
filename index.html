@@ -803,7 +803,7 @@
     }
 
     .site-main>.inner {
-      --padding-horizontal: 0.25rem;
+      --padding-horizontal: 1rem;
       --padding-vertical: 1rem;
       --spacing: 0.75rem;
       --width: 40rem;
@@ -2593,11 +2593,11 @@
 
     .text-component.instance-6 {
       text-transform: lowercase;
-      color: rgb(120, 120, 120);
+      color: rgb(158, 158, 158);
       font-family: Gabarito, sans-serif;
-      letter-spacing: -0.2rem;
+      letter-spacing: -0.1rem;
       width: 100%;
-      font-size: 2.25em;
+      font-size: 2.125em;
       line-height: 0.875;
       font-weight: 500;
     }
@@ -3372,7 +3372,7 @@
 
     @media (max-width: 736px) {
       html {
-        font-size: 13pt;
+        font-size: 16pt;
       }
 
       .site-wrapper {
@@ -3380,11 +3380,10 @@
       }
 
       .site-main>.inner {
-        --width: 100%;
+        --width: 40rem;
         --padding-horizontal: 0.25rem;
         --padding-vertical: 1rem;
         --spacing: 0.75rem;
-        width: 100%;
       }
 
       .site-main>.inner>*>.full {
@@ -3407,7 +3406,7 @@
 
       .container-component.instance-1>.wrapper>.inner {
         --gutters: 0.5rem;
-        --padding-horizontal: 0.5rem;
+        --padding-horizontal: 1rem;
         --padding-vertical: 2rem;
       }
 
@@ -4016,7 +4015,7 @@
       }
 
       .text-component.instance-6 {
-        letter-spacing: -0.175rem;
+        letter-spacing: -0.05rem;
         width: 100%;
         font-size: 2.125em;
         line-height: 0.875;
@@ -4924,7 +4923,7 @@
                 <img id="relation-modal-image" class="relation-modal__image" alt="">
                 <div class="relation-modal__body">
                   <h3 id="relation-modal-title"></h3>
-                  <p id="relation-modal-relation" class="relation-modal__relation"></p>
+                  <p id="relation-modal-handle" class="relation-modal__handle"></p>
                   <p id="relation-modal-description" class="relation-modal__description"></p>
                 </div>
               </div>
@@ -5011,9 +5010,6 @@
     }
 
     #text06 {
-      font-size: 1.3rem;
-      line-height: 1.02;
-      letter-spacing: 0.002em;
       white-space: nowrap;
     }
 
@@ -5039,7 +5035,7 @@
     .relations-grid li {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: stretch;
     }
 
     .relations-grid .relation-button {
@@ -5048,18 +5044,21 @@
       border: 0;
       background: transparent;
       cursor: pointer;
-      text-align: center;
     }
 
     .relations-grid .relation-button .frame {
       display: block;
-      aspect-ratio: 1 / 1;
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
       overflow: hidden;
       border-radius: 0.2rem;
     }
 
     .relations-grid .relation-button img {
-      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -5083,6 +5082,17 @@
       font-weight: 700;
       color: rgb(60, 60, 60);
       font-family: "DM Sans", "Arial", sans-serif;
+    }
+
+    .relations-grid .caption .caption-handle {
+      display: block;
+      margin-top: 0.15rem;
+      font-size: 0.6rem;
+      font-style: italic;
+      font-weight: 400;
+      color: rgb(150, 150, 150);
+      font-family: "DM Sans", "Arial", sans-serif;
+      pointer-events: none;
     }
 
     .relations-grid .relations-loading {
@@ -5191,7 +5201,7 @@
     }
 
     .relation-modal__body h3 {
-      margin: 0 0 0.25rem;
+      margin: 0 0 0.05rem;
       font-size: 1.3rem;
       line-height: 1.15;
       color: rgb(28, 28, 28);
@@ -5200,14 +5210,24 @@
       font-family: inherit;
     }
 
-    .relation-modal__relation {
-      margin: 0 0 0.4rem;
+    .relation-modal__body h3 .relation-modal__relation {
       font-size: 0.82rem;
       font-weight: 600;
       font-style: italic;
       color: var(--relation-accent);
       letter-spacing: 0.08em;
       line-height: 1.35;
+    }
+
+    .relation-modal__handle {
+      margin: 0 0 0.4rem;
+      font-size: 0.6rem;
+      font-weight: 400;
+      font-style: normal;
+      color: rgb(120, 120, 120);
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+      font-family: "DM Sans", "Arial", sans-serif;
     }
 
     .relation-modal__description {
@@ -5314,49 +5334,57 @@
           name: 'muse',
           relation: 'friend / muse',
           description: 'A quiet presence with a soft and steady energy.',
-          image: 'assets/images/gallery03/6fd43179.jpg?v=3793da41'
+          image: 'assets/images/gallery03/6fd43179.jpg?v=3793da41',
+          handle: ''
         },
         {
           name: 'lyra',
           relation: 'friend / muse',
           description: 'Bright and observant, always bringing warmth to a room.',
-          image: 'assets/images/gallery03/7c8521cf.jpg?v=3793da41'
+          image: 'assets/images/gallery03/7c8521cf.jpg?v=3793da41',
+          handle: ''
         },
         {
           name: 'nova',
           relation: 'friend / muse',
           description: 'A bold spark with an unmistakable sense of humor.',
-          image: 'assets/images/gallery03/82371bd8.jpg?v=3793da41'
+          image: 'assets/images/gallery03/82371bd8.jpg?v=3793da41',
+          handle: ''
         },
         {
           name: 'soren',
           relation: 'friend / muse',
           description: 'Calm, thoughtful, and endlessly curious.',
-          image: 'assets/images/gallery03/06255d15.jpg?v=3793da41'
+          image: 'assets/images/gallery03/06255d15.jpg?v=3793da41',
+          handle: ''
         },
         {
           name: 'mira',
           relation: 'friend / muse',
           description: 'A gentle but unforgettable presence in every story.',
-          image: 'assets/images/gallery03/f73dfc4f.jpg?v=3793da41'
+          image: 'assets/images/gallery03/f73dfc4f.jpg?v=3793da41',
+          handle: ''
         },
         {
           name: 'eira',
           relation: 'friend / muse',
           description: 'Soft-spoken, loyal, and deeply kind.',
-          image: 'assets/images/gallery03/c39b98a7.jpg?v=3793da41'
+          image: 'assets/images/gallery03/c39b98a7.jpg?v=3793da41',
+          handle: ''
         },
         {
           name: 'jules',
           relation: 'friend / muse',
           description: 'Playful, sincere, and impossible to forget.',
-          image: 'assets/images/gallery03/dddb3090.jpg?v=3793da41'
+          image: 'assets/images/gallery03/dddb3090.jpg?v=3793da41',
+          handle: ''
         },
         {
           name: 'talia',
           relation: 'friend / muse',
           description: 'A thoughtful companion who carries a quiet grace.',
-          image: 'assets/images/gallery03/f792b744.jpg?v=3793da41'
+          image: 'assets/images/gallery03/f792b744.jpg?v=3793da41',
+          handle: ''
         }
       ];
 
@@ -5364,7 +5392,7 @@
       var modal = document.getElementById('relation-modal');
       var modalImage = document.getElementById('relation-modal-image');
       var modalTitle = document.getElementById('relation-modal-title');
-      var modalRelation = document.getElementById('relation-modal-relation');
+      var modalHandle = document.getElementById('relation-modal-handle');
       var modalDescription = document.getElementById('relation-modal-description');
       var closeButton = modal ? modal.querySelector('.relation-modal__close') : null;
 
@@ -5396,8 +5424,17 @@
         modal.style.setProperty('--relation-accent', accent);
         modalImage.setAttribute('src', item.image || '');
         modalImage.setAttribute('alt', item.name || 'relation');
-        modalTitle.textContent = item.name || 'Relation';
-        modalRelation.textContent = item.relation || '';
+        if (item.name && item.relation) {
+          modalTitle.innerHTML = escapeHtml(item.name) + ' <span class="relation-modal__relation">\u2014 ' + escapeHtml(item.relation) + '</span>';
+        } else if (item.name) {
+          modalTitle.textContent = item.name;
+        } else if (item.relation) {
+          modalTitle.innerHTML = '<span class="relation-modal__relation">\u2014 ' + escapeHtml(item.relation) + '</span>';
+        } else {
+          modalTitle.textContent = 'Relation';
+        }
+        modalHandle.textContent = item.handle || '';
+        modalHandle.style.display = item.handle ? '' : 'none';
         modalDescription.textContent = item.description || '';
         modalDescription.style.display = item.description ? '' : 'none';
         modal.classList.add('visible');
@@ -5534,7 +5571,8 @@
             image: values[0] || getSheetValue(row, ['image', 'img', 'photo', 'url', 'profile', 'column1'], 0),
             name: values[1] || getSheetValue(row, ['name', 'title', 'column2'], 1),
             relation: values[2] || getSheetValue(row, ['relation', 'relationship', 'type', 'role', 'column3'], 2),
-            description: values[3] || getSheetValue(row, ['description', 'desc', 'content', 'notes', 'column4'], 3)
+            description: values[3] || getSheetValue(row, ['description', 'desc', 'content', 'notes', 'column4'], 3),
+            handle: values[4] || getSheetValue(row, ['handle', 'at', 'twitter', 'x', 'social', 'column5'], 4)
           };
         }).filter(function (entry) {
           return entry.image || entry.name || entry.relation || entry.description;
@@ -5558,9 +5596,19 @@
           button.className = 'thumbnail relation-button';
           frame.className = 'frame';
           caption.className = 'caption';
+          image.addEventListener('load', function () {
+            if (contentStage) {
+              var sec = document.getElementById('relations-section');
+              if (sec && sec.classList.contains('active')) {
+                var sh = sec.scrollHeight;
+                if (sh >= 60) contentStage.style.height = sh + 'px';
+              }
+            }
+          });
           image.src = item.image || fallbackRelations[0].image;
           image.alt = item.name || 'relation';
-          captionText.textContent = item.name || item.relation || 'Relation';
+          var name = item.name || item.relation || 'Relation';
+          captionText.innerHTML = escapeHtml(name) + (item.handle ? '<br><span class="caption-handle">' + escapeHtml(item.handle) + '</span>' : '');
 
           button.addEventListener('click', function () {
             openModal(item);
@@ -5699,6 +5747,17 @@
             target.style.opacity = '1';
           }
         }, 120);
+
+        if (window.ResizeObserver) {
+          if (window._sectionObserver) window._sectionObserver.disconnect();
+          window._sectionObserver = new ResizeObserver(function () {
+            var h = target.scrollHeight;
+            if (h >= 60 && contentStage) {
+              contentStage.style.height = h + 'px';
+            }
+          });
+          window._sectionObserver.observe(target);
+        }
       }
 
       document.querySelectorAll('#buttons01 a').forEach(function (btn) {
