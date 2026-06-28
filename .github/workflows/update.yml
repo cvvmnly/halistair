@@ -1,0 +1,22 @@
+name: Update Status
+on:
+  workflow_dispatch:
+    inputs:
+      tweet_text:
+        description: 'New Status'
+        required: true
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update JSON
+        run: |
+          echo "{\"text\": \"${{ github.event.inputs.tweet_text }}\", \"date\": \"$(date +'%Y-%m-%d')\"}" > tweet.json
+          git config user.name "bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add tweet.json
+          git commit -m "Update status"
+          git push
