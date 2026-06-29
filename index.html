@@ -4060,6 +4060,8 @@
 
     .panel-placeholder-third {
       flex: 0 0 calc(31.66% - 0.175rem);
+      background: transparent;
+      background-color: transparent;
     }
 
     .inventory-card {
@@ -4107,14 +4109,14 @@
     }
 
     .panel-moon {
-      height: 9rem;
+      height: 8.67rem;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .panel-calendar {
-      height: 8.72rem;
+      height: 8.67rem;
     }
 
     .relations-grid {
@@ -4254,10 +4256,21 @@
       text-align: center;
       font-family: "DM Sans", "Arial", sans-serif;
       margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
     }
     #moon-widget .moon-wrap {
       line-height: 0;
       filter: drop-shadow(rgb(255, 200, 150) 0px 0px 24px);
+      margin-bottom: 0;
+    }
+    #moon-widget .moon-wrap svg {
+      width: 5rem;
+      height: 5rem;
+      display: block;
     }
     #moon-widget::after {
       content: none;
@@ -4269,8 +4282,8 @@
     }
     #moon-widget .moon-name {
       display: block;
-      margin-top: 0.15rem;
-      font-size: 0.65rem;
+      margin-top: 0.2rem;
+      font-size: 0.62rem;
       font-weight: 700;
       color: rgb(60, 60, 60);
       letter-spacing: 0.03em;
@@ -4278,7 +4291,7 @@
     }
     #moon-widget .moon-pct {
       display: block;
-      font-size: 0.55rem;
+      font-size: 0.56rem;
       color: rgb(130, 130, 130);
     }
 
@@ -5453,4 +5466,3 @@
   </script>
 
 </body></html>
-
