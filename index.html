@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>halistair</title>
-  <link rel="icon" type="image/png" href="https://file.garden/ai5LuPrOLRCONCXy/COMMISSION/HEATHAF/icon">
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+<html lang="en"><head>
+  <title>heathaf</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=640">
   <meta name="color-scheme" content="light only">
@@ -16,6 +13,7 @@
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="800">
   <meta property="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <style>
     /* Source: https://fonts.googleapis.com/css2?display=swap&family=Poiret+One:ital,wght@0,400;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Archivo:ital,wght@0,400;0,700;1,400;1,700&family=Gabarito:ital,wght@0,500;0,700;1,500;1,700&family=Geologica:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900 */
     /* vietnamese */
@@ -674,7 +672,7 @@
     body {
       line-height: 1;
       min-height: var(--viewport-height);
-      min-width: 320px;
+      min-width: 40rem;
       overflow-x: hidden;
       overflow-wrap: break-word;
       background-color: rgb(237, 237, 237);
@@ -809,6 +807,7 @@
       --width: 40rem;
       border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
       max-width: 100%;
+      min-width: 40rem;
       position: relative;
       width: var(--width);
       z-index: 1;
@@ -1094,19 +1093,42 @@
     }
 
     .container-component.instance-4>.wrapper {
-      display: inline-block;
-      width: 75rem;
-      background-color: rgb(255, 255, 255);
-      border-color: rgb(247, 247, 247);
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      background-color: transparent;
+      border-color: transparent;
       border-style: solid;
-      border-width: 11px;
+      border-width: 0;
+      box-sizing: border-box;
+    }
+
+    #container03>.wrapper {
+      background-color: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+    }
+
+    #container03>.wrapper>.inner {
+      background-color: transparent !important;
+      padding: 0 !important;
+    }
+
+    #container04>.wrapper,
+    #container04>.wrapper>.inner {
+      background-color: #ffffff !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
     }
 
     .container-component.instance-4>.wrapper>.inner {
       --gutters: 2.5rem;
       --padding-horizontal: 0.5rem;
-      --padding-vertical: 1rem;
+      --padding-vertical: 0.5rem;
       padding: var(--padding-vertical) var(--padding-horizontal);
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box;
     }
 
     .container-component.instance-4.default>.wrapper>.inner>* {
@@ -1277,7 +1299,7 @@
     .container-component.instance-5>.wrapper>.inner {
       --gutters: 2.5rem;
       --padding-horizontal: 0.5rem;
-      --padding-vertical: 1rem;
+      --padding-vertical: 0.25rem;
       padding: var(--padding-vertical) var(--padding-horizontal);
     }
 
@@ -3349,1187 +3371,59 @@
       object-position: center center;
     }
 
-    @media (max-width: 1920px) {}
+    
 
-    @media (max-width: 1680px) {
-      html {
-        font-size: 12pt;
-      }
-    }
+    
 
-    @media (max-width: 1280px) {
-      html {
-        font-size: 12pt;
-      }
-    }
+    
 
-    @media (max-width: 1024px) {}
+    
 
-    @media (max-width: 980px) {
-      html {
-        font-size: 11pt;
-      }
-    }
+    
 
-    @media (max-width: 736px) {
-      html {
-        font-size: 13pt;
-      }
+    
 
-      .site-wrapper {
-        padding: 0rem;
-      }
+    
 
-      .site-main>.inner {
-        --width: 40rem;
-        --padding-horizontal: 0.25rem;
-        --padding-vertical: 1rem;
-        --spacing: 0.75rem;
-      }
-
-      .site-main>.inner>*>.full {
-        margin-left: calc(-0.25rem);
-        max-width: calc(100% + 0.4725px + 0.5rem);
-        width: calc(100% + 0.4725px + 0.5rem);
-      }
-
-      .site-main>.inner>*>.full.screen {
-        margin-left: -50vw;
-      }
-
-      .site-main>.inner>header>.full:first-child {
-        margin-top: -1rem !important;
-      }
-
-      .site-main>.inner>footer>.full:last-child {
-        margin-bottom: -1rem !important;
-      }
-
-      .container-component.instance-1>.wrapper>.inner {
-        --gutters: 0.5rem;
-        --padding-horizontal: 1rem;
-        --padding-vertical: 2rem;
-      }
-
-      .container-component.instance-4:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .container-component.instance-4:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .container-component.instance-4>.wrapper>.inner {
-        --gutters: 2.5rem;
-        --padding-horizontal: 0.5rem;
-        --padding-vertical: 1rem;
-      }
-
-      .container-component.instance-5:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .container-component.instance-5:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .container-component.instance-5>.wrapper>.inner {
-        --gutters: 2.5rem;
-        --padding-horizontal: 0.5rem;
-        --padding-vertical: 1rem;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner {
-        flex-flow: column !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>span {
-        height: 0px;
-        margin-top: calc(var(--gutters) * -1);
-        pointer-events: none;
-        visibility: hidden;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>span:first-child+div::before {
-        display: none !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner> :first-child {
-        margin-left: 0px !important;
-        padding-top: 0px !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>* {
-        padding: calc(var(--gutters) * 0.5) 0 !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner> ::before {
-        border-top: 11px solid rgb(247, 247, 247) !important;
-        height: 0px !important;
-        margin-left: 0px !important;
-        top: auto !important;
-        margin-top: calc((var(--gutters) * -0.5) - 5.5px) !important;
-        left: 0px !important;
-        width: 100% !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner> :last-child {
-        padding-bottom: 0px !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner> :first-child::before {
-        display: none !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner> :last-child::before {
-        display: block !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:first-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:last-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div>.full:first-child {
-        margin-top: calc((var(--gutters) * -0.5) + 5.5px) !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div>.full:last-child {
-        margin-bottom: calc((var(--gutters) * -0.5) + 5.5px) !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:first-of-type,
-      .container-component.instance-5.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:last-of-type,
-      .container-component.instance-5.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:first-of-type,
-      .container-component.instance-5.columns>.wrapper>.inner>div:first-of-type>.full:last-child {
-        border-bottom-left-radius: 0px !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>div:last-of-type,
-      .container-component.instance-5.columns>.wrapper>.inner>div:last-of-type>.full:first-child {
-        border-top-right-radius: 0px !important;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>.full>.full:first-child:last-child {
-        height: auto;
-      }
-
-      .container-component.instance-5.columns>.wrapper>.inner>.full>.full:first-child:last-child>* {
-        height: auto;
-        position: relative;
-        width: auto;
-      }
-
-      .container-component.instance-3:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .container-component.instance-3:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .container-component.instance-3>.wrapper>.inner {
-        --gutters: 2.5rem;
-        --padding-horizontal: 0.5rem;
-        --padding-vertical: 1rem;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner {
-        flex-flow: column !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>span {
-        height: 0px;
-        margin-top: calc(var(--gutters) * -1);
-        pointer-events: none;
-        visibility: hidden;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>span:first-child+div::before {
-        display: none !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner> :first-child {
-        margin-left: 0px !important;
-        padding-top: 0px !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>* {
-        padding: calc(var(--gutters) * 0.5) 0 !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner> ::before {
-        border-top: 11px solid rgb(247, 247, 247) !important;
-        height: 0px !important;
-        margin-left: 0px !important;
-        top: auto !important;
-        margin-top: calc((var(--gutters) * -0.5) - 5.5px) !important;
-        left: 0px !important;
-        width: 100% !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner> :last-child {
-        padding-bottom: 0px !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner> :first-child::before {
-        display: none !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner> :last-child::before {
-        display: block !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:first-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:last-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div>.full:first-child {
-        margin-top: calc((var(--gutters) * -0.5) + 5.5px) !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div>.full:last-child {
-        margin-bottom: calc((var(--gutters) * -0.5) + 5.5px) !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:first-of-type,
-      .container-component.instance-3.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:last-of-type,
-      .container-component.instance-3.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:first-of-type,
-      .container-component.instance-3.columns>.wrapper>.inner>div:first-of-type>.full:last-child {
-        border-bottom-left-radius: 0px !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>div:last-of-type,
-      .container-component.instance-3.columns>.wrapper>.inner>div:last-of-type>.full:first-child {
-        border-top-right-radius: 0px !important;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>.full>.full:first-child:last-child {
-        height: auto;
-      }
-
-      .container-component.instance-3.columns>.wrapper>.inner>.full>.full:first-child:last-child>* {
-        height: auto;
-        position: relative;
-        width: auto;
-      }
-
-      .container-component.instance-2:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .container-component.instance-2:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .container-component.instance-2>.wrapper>.inner {
-        --gutters: 2.5rem;
-        --padding-horizontal: 0.5rem;
-        --padding-vertical: 0.25rem;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner {
-        flex-flow: column !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>span {
-        height: 0px;
-        margin-top: calc(var(--gutters) * -1);
-        pointer-events: none;
-        visibility: hidden;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>span:first-child+div::before {
-        display: none !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner> :first-child {
-        margin-left: 0px !important;
-        padding-top: 0px !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>* {
-        padding: calc(var(--gutters) * 0.5) 0 !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner> ::before {
-        border-top: 11px solid rgb(247, 247, 247) !important;
-        height: 0px !important;
-        margin-left: 0px !important;
-        top: auto !important;
-        margin-top: calc((var(--gutters) * -0.5) - 5.5px) !important;
-        left: 0px !important;
-        width: 100% !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner> :last-child {
-        padding-bottom: 0px !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner> :first-child::before {
-        display: none !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner> :last-child::before {
-        display: block !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:first-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:last-of-type>.full {
-        margin-left: calc(var(--padding-horizontal) * -1);
-        width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div>.full:first-child {
-        margin-top: calc((var(--gutters) * -0.5) + 5.5px) !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div>.full:last-child {
-        margin-bottom: calc((var(--gutters) * -0.5) + 5.5px) !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        margin-top: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        margin-bottom: calc(var(--padding-vertical) * -1) !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:first-of-type,
-      .container-component.instance-2.columns>.wrapper>.inner>div:first-of-type>.full:first-child {
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:last-of-type,
-      .container-component.instance-2.columns>.wrapper>.inner>div:last-of-type>.full:last-child {
-        border-bottom-left-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:first-of-type,
-      .container-component.instance-2.columns>.wrapper>.inner>div:first-of-type>.full:last-child {
-        border-bottom-left-radius: 0px !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>div:last-of-type,
-      .container-component.instance-2.columns>.wrapper>.inner>div:last-of-type>.full:first-child {
-        border-top-right-radius: 0px !important;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>.full>.full:first-child:last-child {
-        height: auto;
-      }
-
-      .container-component.instance-2.columns>.wrapper>.inner>.full>.full:first-child:last-child>* {
-        height: auto;
-        position: relative;
-        width: auto;
-      }
-
-      .buttons-component.instance-1 {
-        gap: 0.125rem;
-      }
-
-      .buttons-component.instance-1>li>a {
-        letter-spacing: 0rem;
-        font-size: 1em;
-        padding: 0.5rem 0.5rem;
-      }
-
-      .buttons-component.instance-3 {
-        gap: 0.25rem;
-      }
-
-      .buttons-component.instance-3>li>a {
-        letter-spacing: -0.1rem;
-        font-size: 0.875em;
-      }
-
-      .table-component.instance-1 th {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-1 td {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-1 th,
-      .table-component.instance-1 td {
-        padding: 0.25rem 0.34375rem;
-      }
-
-      .table-component.instance-5 th {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-5 td {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-5 th,
-      .table-component.instance-5 td {
-        padding: 0.25rem 0.34375rem;
-      }
-
-      .table-component.instance-6 th {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-6 td {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-6 th,
-      .table-component.instance-6 td {
-        padding: 0.25rem 0.34375rem;
-      }
-
-      .table-component.instance-7 th {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-7 td {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-7 th,
-      .table-component.instance-7 td {
-        padding: 0.25rem 0.34375rem;
-      }
-
-      .table-component.instance-8 th,
-      .table-component.instance-9 th {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-8 td,
-      .table-component.instance-9 td {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .table-component.instance-8 th,
-      .table-component.instance-8 td,
-      .table-component.instance-9 th,
-      .table-component.instance-9 td {
-        padding: 0.25rem 0.34375rem;
-      }
-
-      .text-component.instance-5:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-5:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-5 {
-        letter-spacing: 0.175rem;
-        width: calc(100% + 0.175rem);
-        font-size: 0.625em;
-        line-height: 1.5;
-      }
-
-      .text-component.instance-3:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-3:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-3 {
-        letter-spacing: -0.240625rem;
-        width: 100%;
-        font-size: 2.125em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-1:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-1:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-1 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 0.625em;
-        line-height: 1.5;
-      }
-
-      .text-component.instance-14:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-14:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-14 {
-        letter-spacing: -0.240625rem;
-        width: 100%;
-        font-size: 2.125em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-12:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-12:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-12 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 0.75em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-13:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-13:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-13 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 0.75em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-11:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-11:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-11 {
-        letter-spacing: -0.240625rem;
-        width: 100%;
-        font-size: 2.125em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-6:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-6:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-6 {
-        letter-spacing: -0.05rem;
-        width: 100%;
-        font-size: 2.125em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-2:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-2:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-2 {
-        letter-spacing: 0.0875rem;
-        width: calc(100% + 0.0875rem);
-        font-size: 0.625em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-7:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-7:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-7 {
-        letter-spacing: -0.240625rem;
-        width: 100%;
-        font-size: 2.125em;
-        line-height: 0.875;
-      }
-
-      .text-component.instance-8:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-8:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-8 {
-        letter-spacing: 0rem;
-        width: 100%;
-        font-size: 0.625em;
-        line-height: 1.5;
-      }
-
-      .text-component.instance-4:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .text-component.instance-4:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .text-component.instance-4 {
-        letter-spacing: -0.240625rem;
-        width: 100%;
-        font-size: 2.125em;
-        line-height: 0.875;
-      }
-
-      .image-component.instance-3>.frame {
-        width: 84.375rem;
-        height: 8.28125rem !important;
-      }
-
-      .image-component.instance-3>.frame>img {
-        object-fit: cover;
-        object-position: center center;
-        height: 100% !important;
-        width: 100% !important;
-      }
-
-      .image-component.instance-1>.frame {
-        width: 84.375rem;
-        height: 10rem !important;
-      }
-
-      .image-component.instance-1>.frame>img {
-        object-fit: cover;
-        object-position: center center;
-        height: 100% !important;
-        width: 100% !important;
-      }
-
-      .divider-component.style-2:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .divider-component.style-2:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .divider-component.style-2::before {
-        width: 100rem;
-      }
-
-      .list-component.instance-3:not(:first-child) {
-        margin-top: 0.1875rem !important;
-      }
-
-      .list-component.instance-3:not(:last-child) {
-        margin-bottom: 0.1875rem !important;
-      }
-
-      .list-component.instance-3 {
-        letter-spacing: 0rem;
-        font-size: 0.875em;
-        line-height: 1.125;
-      }
-
-      .list-component.instance-3 ul>li::after {
-        width: 0.546875rem;
-      }
-
-      .list-component.instance-3 ul>li::before {
-        height: 0.984375rem;
-        line-height: 0.984375rem;
-        min-width: 0.461426rem;
-      }
-
-      .list-component.instance-5:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .list-component.instance-5:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .list-component.instance-5 {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .list-component.instance-5 ul>li::after {
-        width: 0.5rem;
-      }
-
-      .list-component.instance-5 ul>li::before {
-        height: 0.84375rem;
-        line-height: 0.84375rem;
-        min-width: 0.395508rem;
-      }
-
-      .list-component.instance-6:not(:first-child) {
-        margin-top: 0rem !important;
-      }
-
-      .list-component.instance-6:not(:last-child) {
-        margin-bottom: 0rem !important;
-      }
-
-      .list-component.instance-6 {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 1.125;
-      }
-
-      .list-component.instance-6 ul>li::after {
-        width: 0.5rem;
-      }
-
-      .list-component.instance-6 ul>li::before {
-        height: 0.84375rem;
-        line-height: 0.84375rem;
-        min-width: 0.395508rem;
-      }
-
-      .icons-component.instance-2 {
-        font-size: 1em;
-        gap: 0.625rem;
-      }
-
-      #header {
-        margin-bottom: 0rem !important;
-      }
-
-      .gallery-component.instance-3 ul>li>.caption>p {
-        letter-spacing: 0rem;
-        font-size: 0.75em;
-        line-height: 0.75;
-      }
-
-      .gallery-component.instance-3 ul>li {
-        flex-basis: calc(25% - var(--gap));
-      }
-
-      .gallery-component.instance-3 ul>li>.thumbnail>.frame>img {
-        height: 5.8125rem;
-        width: 100%;
-      }
-
-      .gallery-component.instance-1 ul>li>.thumbnail>.frame>img {
-        height: 5.34375rem;
-      }
-
-      .table-component.instance-1 th,
-      .table-component.instance-5 th,
-      .table-component.instance-6 th,
-      .table-component.instance-7 th,
-      .table-component.instance-8 th {
-        white-space: nowrap;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .site-wrapper {
-        padding: 0rem;
-      }
-
-      .site-main>.inner {
-        --spacing: 0.65625rem;
-      }
-
-      .buttons-component.instance-1>li>a {
-        padding: 0.45rem 0.5rem;
-      }
-
-      .buttons-component.instance-3 {
-        flex-flow: column;
-      }
-
-      .buttons-component.instance-3>li>a {
-        max-width: 32rem;
-        width: 100%;
-      }
-
-      .image-component.instance-3>.frame {
-        height: 6.625rem !important;
-      }
-
-      .image-component.instance-1>.frame {
-        height: 8rem !important;
-      }
-    }
-
-    @media (max-width: 360px) {
-      .site-wrapper {
-        padding: 0rem;
-      }
-
-      .site-main>.inner {
-        --padding-horizontal: 0.1875rem;
-        --padding-vertical: 0.75rem;
-        --spacing: 0.5625rem;
-      }
-
-      .site-main>.inner>*>.full {
-        margin-left: calc(-0.1875rem);
-        max-width: calc(100% + 0.4725px + 0.375rem);
-        width: calc(100% + 0.4725px + 0.375rem);
-      }
-
-      .site-main>.inner>*>.full.screen {
-        margin-left: -50vw;
-      }
-
-      .site-main>.inner>header>.full:first-child {
-        margin-top: -0.75rem !important;
-      }
-
-      .site-main>.inner>footer>.full:last-child {
-        margin-bottom: -0.75rem !important;
-      }
-
-      .container-component.instance-1>.wrapper>.inner {
-        --gutters: 0.5rem;
-        --padding-horizontal: 0.75rem;
-        --padding-vertical: 1.5rem;
-      }
-
-      .container-component.instance-4>.wrapper>.inner {
-        --gutters: 1.875rem;
-        --padding-horizontal: 0.75rem;
-        --padding-vertical: 0.75rem;
-      }
-
-      .container-component.instance-5>.wrapper>.inner {
-        --gutters: 1.875rem;
-        --padding-horizontal: 0.75rem;
-        --padding-vertical: 0.75rem;
-      }
-
-      .container-component.instance-3>.wrapper>.inner {
-        --gutters: 1.875rem;
-        --padding-horizontal: 0.75rem;
-        --padding-vertical: 0.75rem;
-      }
-
-      .container-component.instance-2>.wrapper>.inner {
-        --gutters: 1.875rem;
-        --padding-horizontal: 0.75rem;
-        --padding-vertical: 0.1875rem;
-      }
-
-      .buttons-component.instance-1 {
-        gap: 0.09375rem;
-      }
-
-      .buttons-component.instance-1>li>a {
-        padding: 0.4rem 0.5rem;
-      }
-
-      .buttons-component.instance-3 {
-        gap: 0.1875rem;
-      }
-
-      .table-component.instance-1 th {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-1 td {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-5 th {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-5 td {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-6 th {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-6 td {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-7 th {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-7 td {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-8 th,
-      .table-component.instance-9 th {
-        font-size: 0.75em;
-      }
-
-      .table-component.instance-8 td,
-      .table-component.instance-9 td {
-        font-size: 0.75em;
-      }
-
-      .text-component.instance-5 {
-        font-size: 0.625em;
-      }
-
-      .text-component.instance-3 {
-        font-size: 2em;
-      }
-
-      .text-component.instance-1 {
-        font-size: 0.625em;
-      }
-
-      .text-component.instance-14 {
-        font-size: 2em;
-      }
-
-      .text-component.instance-12 {
-        font-size: 0.75em;
-      }
-
-      .text-component.instance-13 {
-        font-size: 0.75em;
-      }
-
-      .text-component.instance-11 {
-        font-size: 2em;
-      }
-
-      .text-component.instance-6 {
-        font-size: 2em;
-      }
-
-      .text-component.instance-2 {
-        font-size: 0.625em;
-      }
-
-      .text-component.instance-7 {
-        font-size: 2em;
-      }
-
-      .text-component.instance-8 {
-        font-size: 0.625em;
-      }
-
-      .text-component.instance-4 {
-        font-size: 2em;
-      }
-
-      .image-component.instance-3>.frame {
-        height: 5.79688rem !important;
-      }
-
-      .image-component.instance-1>.frame {
-        height: 7rem !important;
-      }
-
-      .list-component.instance-3 {
-        font-size: 0.875em;
-      }
-
-      .list-component.instance-3 ul>li::after {
-        width: 0.546875rem;
-      }
-
-      .list-component.instance-3 ul>li::before {
-        height: 0.984375rem;
-        line-height: 0.984375rem;
-        min-width: 0.461426rem;
-      }
-
-      .list-component.instance-5 {
-        font-size: 0.75em;
-      }
-
-      .list-component.instance-5 ul>li::after {
-        width: 0.5rem;
-      }
-
-      .list-component.instance-5 ul>li::before {
-        height: 0.84375rem;
-        line-height: 0.84375rem;
-        min-width: 0.395508rem;
-      }
-
-      .list-component.instance-6 {
-        font-size: 0.75em;
-      }
-
-      .list-component.instance-6 ul>li::after {
-        width: 0.5rem;
-      }
-
-      .list-component.instance-6 ul>li::before {
-        height: 0.84375rem;
-        line-height: 0.84375rem;
-        min-width: 0.395508rem;
-      }
-
-      .icons-component.instance-2 {
-        gap: 0.46875rem;
-      }
-
-      .gallery-component.instance-3 ul>li>.caption>p {
-        font-size: 0.75em;
-      }
-
-      .gallery-component.instance-3 ul {
-        --gap: 0.65625rem;
-      }
-
-      .gallery-component.instance-1 ul {
-        gap: 0.65625rem;
-      }
-    }
+    
   </style>
 </head>
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40"
-    display="none" width="0" height="0">
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40" display="none" width="0" height="0">
     <symbol id="icon-0c4db87eff374f0f1ef47f8f043f0132" viewBox="0 0 40 40">
-      <path
-        d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z">
+      <path d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z">
       </path>
     </symbol>
     <symbol id="icon-c1d8f15855a0b42b59eb995995e64fcd" viewBox="0 0 40 40">
-      <path
-        d="M26.8,29.7l1.6,4.6c-0.3,0.5-1,0.9-2.2,1.3s-2.3,0.6-3.4,0.6c-1.4,0-2.6-0.1-3.7-0.5s-2.1-0.8-2.8-1.4 c-0.7-0.6-1.3-1.3-1.9-2.1c-0.5-0.8-0.9-1.6-1.1-2.3c-0.2-0.8-0.3-1.5-0.3-2.3V16.9H9.7v-4.2c0.9-0.3,1.8-0.8,2.5-1.4 s1.3-1.1,1.8-1.8s0.8-1.3,1.1-2c0.3-0.7,0.5-1.4,0.7-1.9S16,4.6,16.1,4c0-0.1,0-0.1,0.1-0.2s0.1-0.1,0.1-0.1h4.8V12h6.5v4.9h-6.5V27 c0,0.4,0,0.8,0.1,1.1c0.1,0.3,0.2,0.7,0.4,1s0.5,0.6,1,0.8c0.4,0.2,1,0.3,1.6,0.3C25.2,30.2,26.1,30,26.8,29.7L26.8,29.7z">
+      <path d="M26.8,29.7l1.6,4.6c-0.3,0.5-1,0.9-2.2,1.3s-2.3,0.6-3.4,0.6c-1.4,0-2.6-0.1-3.7-0.5s-2.1-0.8-2.8-1.4 c-0.7-0.6-1.3-1.3-1.9-2.1c-0.5-0.8-0.9-1.6-1.1-2.3c-0.2-0.8-0.3-1.5-0.3-2.3V16.9H9.7v-4.2c0.9-0.3,1.8-0.8,2.5-1.4 s1.3-1.1,1.8-1.8s0.8-1.3,1.1-2c0.3-0.7,0.5-1.4,0.7-1.9S16,4.6,16.1,4c0-0.1,0-0.1,0.1-0.2s0.1-0.1,0.1-0.1h4.8V12h6.5v4.9h-6.5V27 c0,0.4,0,0.8,0.1,1.1c0.1,0.3,0.2,0.7,0.4,1s0.5,0.6,1,0.8c0.4,0.2,1,0.3,1.6,0.3C25.2,30.2,26.1,30,26.8,29.7L26.8,29.7z">
       </path>
     </symbol>
     <symbol id="icon-85976685de3e4af37529a1ce5d57d2a7" viewBox="0 0 40 40">
-      <path
-        d="M20,7c4.2,0,4.7,0,6.3,0.1c1.5,0.1,2.3,0.3,3,0.5C30,8,30.5,8.3,31.1,8.9c0.5,0.5,0.9,1.1,1.2,1.8c0.2,0.5,0.5,1.4,0.5,3 C33,15.3,33,15.8,33,20s0,4.7-0.1,6.3c-0.1,1.5-0.3,2.3-0.5,3c-0.3,0.7-0.6,1.2-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2 c-0.5,0.2-1.4,0.5-3,0.5C24.7,33,24.2,33,20,33s-4.7,0-6.3-0.1c-1.5-0.1-2.3-0.3-3-0.5C10,32,9.5,31.7,8.9,31.1 C8.4,30.6,8,30,7.7,29.3c-0.2-0.5-0.5-1.4-0.5-3C7,24.7,7,24.2,7,20s0-4.7,0.1-6.3c0.1-1.5,0.3-2.3,0.5-3C8,10,8.3,9.5,8.9,8.9 C9.4,8.4,10,8,10.7,7.7c0.5-0.2,1.4-0.5,3-0.5C15.3,7.1,15.8,7,20,7z M20,4.3c-4.3,0-4.8,0-6.5,0.1c-1.6,0-2.8,0.3-3.8,0.7 C8.7,5.5,7.8,6,6.9,6.9C6,7.8,5.5,8.7,5.1,9.7c-0.4,1-0.6,2.1-0.7,3.8c-0.1,1.7-0.1,2.2-0.1,6.5s0,4.8,0.1,6.5 c0,1.6,0.3,2.8,0.7,3.8c0.4,1,0.9,1.9,1.8,2.8c0.9,0.9,1.7,1.4,2.8,1.8c1,0.4,2.1,0.6,3.8,0.7c1.6,0.1,2.2,0.1,6.5,0.1 s4.8,0,6.5-0.1c1.6-0.1,2.9-0.3,3.8-0.7c1-0.4,1.9-0.9,2.8-1.8c0.9-0.9,1.4-1.7,1.8-2.8c0.4-1,0.6-2.1,0.7-3.8 c0.1-1.6,0.1-2.2,0.1-6.5s0-4.8-0.1-6.5c-0.1-1.6-0.3-2.9-0.7-3.8c-0.4-1-0.9-1.9-1.8-2.8c-0.9-0.9-1.7-1.4-2.8-1.8 c-1-0.4-2.1-0.6-3.8-0.7C24.8,4.3,24.3,4.3,20,4.3L20,4.3L20,4.3z">
+      <path d="M20,7c4.2,0,4.7,0,6.3,0.1c1.5,0.1,2.3,0.3,3,0.5C30,8,30.5,8.3,31.1,8.9c0.5,0.5,0.9,1.1,1.2,1.8c0.2,0.5,0.5,1.4,0.5,3 C33,15.3,33,15.8,33,20s0,4.7-0.1,6.3c-0.1,1.5-0.3,2.3-0.5,3c-0.3,0.7-0.6,1.2-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2 c-0.5,0.2-1.4,0.5-3,0.5C24.7,33,24.2,33,20,33s-4.7,0-6.3-0.1c-1.5-0.1-2.3-0.3-3-0.5C10,32,9.5,31.7,8.9,31.1 C8.4,30.6,8,30,7.7,29.3c-0.2-0.5-0.5-1.4-0.5-3C7,24.7,7,24.2,7,20s0-4.7,0.1-6.3c0.1-1.5,0.3-2.3,0.5-3C8,10,8.3,9.5,8.9,8.9 C9.4,8.4,10,8,10.7,7.7c0.5-0.2,1.4-0.5,3-0.5C15.3,7.1,15.8,7,20,7z M20,4.3c-4.3,0-4.8,0-6.5,0.1c-1.6,0-2.8,0.3-3.8,0.7 C8.7,5.5,7.8,6,6.9,6.9C6,7.8,5.5,8.7,5.1,9.7c-0.4,1-0.6,2.1-0.7,3.8c-0.1,1.7-0.1,2.2-0.1,6.5s0,4.8,0.1,6.5 c0,1.6,0.3,2.8,0.7,3.8c0.4,1,0.9,1.9,1.8,2.8c0.9,0.9,1.7,1.4,2.8,1.8c1,0.4,2.1,0.6,3.8,0.7c1.6,0.1,2.2,0.1,6.5,0.1 s4.8,0,6.5-0.1c1.6-0.1,2.9-0.3,3.8-0.7c1-0.4,1.9-0.9,2.8-1.8c0.9-0.9,1.4-1.7,1.8-2.8c0.4-1,0.6-2.1,0.7-3.8 c0.1-1.6,0.1-2.2,0.1-6.5s0-4.8-0.1-6.5c-0.1-1.6-0.3-2.9-0.7-3.8c-0.4-1-0.9-1.9-1.8-2.8c-0.9-0.9-1.7-1.4-2.8-1.8 c-1-0.4-2.1-0.6-3.8-0.7C24.8,4.3,24.3,4.3,20,4.3L20,4.3L20,4.3z">
       </path>
-      <path
-        d="M20,11.9c-4.5,0-8.1,3.7-8.1,8.1s3.7,8.1,8.1,8.1s8.1-3.7,8.1-8.1S24.5,11.9,20,11.9z M20,25.2c-2.9,0-5.2-2.3-5.2-5.2 s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S22.9,25.2,20,25.2z">
+      <path d="M20,11.9c-4.5,0-8.1,3.7-8.1,8.1s3.7,8.1,8.1,8.1s8.1-3.7,8.1-8.1S24.5,11.9,20,11.9z M20,25.2c-2.9,0-5.2-2.3-5.2-5.2 s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S22.9,25.2,20,25.2z">
       </path>
       <path d="M30.6,11.6c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9C29.8,9.7,30.6,10.5,30.6,11.6z">
       </path>
     </symbol>
     <symbol id="icon-950f35a71f420383dc2b54f8bf482185" viewBox="0 0 40 40">
-      <path
-        d="M35.3,20c0,2.8-0.7,5.4-2.1,7.7c-1.4,2.4-3.3,4.2-5.6,5.6c-2.4,1.4-4.9,2.1-7.7,2.1c-1.5,0-2.9-0.2-4.4-0.6 c0.8-1.2,1.3-2.3,1.6-3.3c0.1-0.5,0.5-1.9,1.1-4.2c0.3,0.5,0.8,1,1.5,1.4c0.7,0.4,1.5,0.6,2.3,0.6c1.6,0,3.1-0.5,4.3-1.4 c1.3-0.9,2.3-2.2,3-3.8c0.7-1.6,1-3.4,1-5.4c0-1.5-0.4-3-1.2-4.3c-0.8-1.3-2-2.4-3.5-3.3c-1.5-0.8-3.2-1.3-5.1-1.3 c-1.4,0-2.7,0.2-3.9,0.6c-1.2,0.4-2.3,0.9-3.1,1.5c-0.9,0.6-1.6,1.4-2.2,2.2c-0.6,0.8-1.1,1.7-1.3,2.6c-0.3,0.9-0.4,1.8-0.4,2.7 c0,1.4,0.3,2.6,0.8,3.7c0.5,1.1,1.3,1.8,2.3,2.2c0.4,0.2,0.7,0,0.8-0.4c0-0.1,0.1-0.3,0.2-0.6c0.1-0.3,0.1-0.5,0.2-0.6 c0.1-0.3,0-0.6-0.2-0.9c-0.7-0.8-1-1.8-1-3c0-2,0.7-3.8,2.1-5.2c1.4-1.5,3.2-2.2,5.5-2.2c2,0,3.6,0.5,4.7,1.6 c1.1,1.1,1.7,2.5,1.7,4.3c0,2.3-0.5,4.2-1.4,5.8s-2.1,2.4-3.5,2.4c-0.8,0-1.5-0.3-2-0.9c-0.5-0.6-0.6-1.3-0.5-2.1 c0.1-0.5,0.3-1.1,0.5-1.9c0.2-0.8,0.4-1.5,0.6-2.1c0.2-0.6,0.2-1.1,0.2-1.5c0-0.7-0.2-1.2-0.5-1.7c-0.4-0.4-0.9-0.7-1.5-0.7 c-0.8,0-1.5,0.4-2.1,1.1c-0.6,0.8-0.9,1.7-0.9,2.9c0,1,0.2,1.8,0.5,2.5l-2,8.4c-0.2,0.9-0.3,2.1-0.3,3.6c-2.8-1.2-5-3.1-6.7-5.6 S4.4,23.1,4.4,20c0-2.8,0.7-5.4,2.1-7.7S9.7,8,12.1,6.6s4.9-2.1,7.7-2.1c2.8,0,5.4,0.7,7.7,2.1s4.2,3.3,5.6,5.6 C34.6,14.6,35.3,17.2,35.3,20L35.3,20z">
+      <path d="M35.3,20c0,2.8-0.7,5.4-2.1,7.7c-1.4,2.4-3.3,4.2-5.6,5.6c-2.4,1.4-4.9,2.1-7.7,2.1c-1.5,0-2.9-0.2-4.4-0.6 c0.8-1.2,1.3-2.3,1.6-3.3c0.1-0.5,0.5-1.9,1.1-4.2c0.3,0.5,0.8,1,1.5,1.4c0.7,0.4,1.5,0.6,2.3,0.6c1.6,0,3.1-0.5,4.3-1.4 c1.3-0.9,2.3-2.2,3-3.8c0.7-1.6,1-3.4,1-5.4c0-1.5-0.4-3-1.2-4.3c-0.8-1.3-2-2.4-3.5-3.3c-1.5-0.8-3.2-1.3-5.1-1.3 c-1.4,0-2.7,0.2-3.9,0.6c-1.2,0.4-2.3,0.9-3.1,1.5c-0.9,0.6-1.6,1.4-2.2,2.2c-0.6,0.8-1.1,1.7-1.3,2.6c-0.3,0.9-0.4,1.8-0.4,2.7 c0,1.4,0.3,2.6,0.8,3.7c0.5,1.1,1.3,1.8,2.3,2.2c0.4,0.2,0.7,0,0.8-0.4c0-0.1,0.1-0.3,0.2-0.6c0.1-0.3,0.1-0.5,0.2-0.6 c0.1-0.3,0-0.6-0.2-0.9c-0.7-0.8-1-1.8-1-3c0-2,0.7-3.8,2.1-5.2c1.4-1.5,3.2-2.2,5.5-2.2c2,0,3.6,0.5,4.7,1.6 c1.1,1.1,1.7,2.5,1.7,4.3c0,2.3-0.5,4.2-1.4,5.8s-2.1,2.4-3.5,2.4c-0.8,0-1.5-0.3-2-0.9c-0.5-0.6-0.6-1.3-0.5-2.1 c0.1-0.5,0.3-1.1,0.5-1.9c0.2-0.8,0.4-1.5,0.6-2.1c0.2-0.6,0.2-1.1,0.2-1.5c0-0.7-0.2-1.2-0.5-1.7c-0.4-0.4-0.9-0.7-1.5-0.7 c-0.8,0-1.5,0.4-2.1,1.1c-0.6,0.8-0.9,1.7-0.9,2.9c0,1,0.2,1.8,0.5,2.5l-2,8.4c-0.2,0.9-0.3,2.1-0.3,3.6c-2.8-1.2-5-3.1-6.7-5.6 S4.4,23.1,4.4,20c0-2.8,0.7-5.4,2.1-7.7S9.7,8,12.1,6.6s4.9-2.1,7.7-2.1c2.8,0,5.4,0.7,7.7,2.1s4.2,3.3,5.6,5.6 C34.6,14.6,35.3,17.2,35.3,20L35.3,20z">
       </path>
     </symbol>
   </svg>
   <div class="site-wrapper">
     <div class="site-main" role="main">
       <div class="inner">
-        <header id="header">
-          <div id="container01" class="container-component instance-1 columns full"
-            style="opacity: 1; transform: none;">
+        <header id="header" style="transform: translateY(0px);">
+          <div id="container01" class="container-component instance-1 columns full" style="opacity: 1; transform: none;">
             <div class="wrapper">
               <div class="inner">
                 <div>
                   <div id="header-readout" class="header-readout" aria-live="polite">
                     <span id="header-time">--:--:--</span>
                     <span class="header-readout__divider">//</span>
-                    <span id="header-weather">⏳</span>
+                    <span id="header-weather" data-fallback="false">--</span>
                   </div>
                   <ul id="buttons01" class="buttons-component instance-1">
                     <li>
@@ -4548,7 +3442,7 @@
                         <thead>
                           <tr>
                             <th>
-                              <strong>■ ■ ■</strong> now...
+                              <strong>&#9632; &#9632; &#9632;</strong> now...
                             </th>
                           </tr>
                         </thead>
@@ -4576,10 +3470,10 @@
                 </div>
                 <div>
                   <h2 id="text06" class="text-component instance-6">
-                    <strong>h</strong>eath alistair francisco &nbsp;<strong>⸻</strong>
+                    <strong>h</strong>eath alistair francisco &nbsp;<strong>&#11835;</strong>
                   </h2>
                   <p id="text02" class="text-component instance-2">
-                    ⸻ pottery and art curation
+                    &#11835; pottery and art curation
                   </p>
                   <div id="image01" class="image-component instance-1" data-position="center">
                     <span class="frame">
@@ -4591,8 +3485,8 @@
             </div>
           </div>
         </header>
-        <div id="content-stage" class="content-stage">
-          <section id="home-section" class="inactive">
+        <div id="content-stage" class="content-stage" style="height: 491px;">
+          <section id="home-section" class="inactive" aria-hidden="true" style="opacity: 0; visibility: hidden; pointer-events: none;">
             <div id="container04" class="container-component instance-4 columns" style="opacity: 1; transform: none;">
               <div class="wrapper">
                 <div class="inner">
@@ -4610,32 +3504,32 @@
                     <ul>
                       <li>
                         <p>
-                          <span style="color: #ffc8cb">■</span> heath alistair francisco
+                          <span style="color: #ffc8cb">&#9632;</span> heath alistair francisco
                         </p>
                       </li>
                       <li>
                         <p>
-                          <span style="color: #dfebeb">■</span> 22 y.o.
+                          <span style="color: #dfebeb">&#9632;</span> 22 y.o.
                         </p>
                       </li>
                       <li>
                         <p>
-                          <span style="color: #f1f7b5">■</span> he/him
+                          <span style="color: #f1f7b5">&#9632;</span> he/him
                         </p>
                       </li>
                       <li>
                         <p>
-                          <span style="color: #FCE7B8">■</span> gmt+8
+                          <span style="color: #FCE7B8">&#9632;</span> gmt+8
                         </p>
                       </li>
                       <li>
                         <p>
-                          <span style="color: #E0E5B6">■</span> infp
+                          <span style="color: #E0E5B6">&#9632;</span> infp
                         </p>
                       </li>
                       <li>
                         <p>
-                          <span style="color: #ffc8cb">■</span> feb 9, 2004
+                          <span style="color: #ffc8cb">&#9632;</span> feb 9, 2004
                         </p>
                       </li>
                     </ul>
@@ -4659,7 +3553,7 @@
                         <thead>
                           <tr>
                             <th>
-                              <strong>■ ■ ■</strong> music
+                              <strong>&#9632; &#9632; &#9632;</strong> music
                             </th>
                             <th>&nbsp;</th>
                           </tr>
@@ -4675,13 +3569,13 @@
                             <td>
                               <strong>all time low</strong>
                             </td>
-                            <td>ben&ben</td>
+                            <td>ben&amp;ben</td>
                           </tr>
                           <tr>
                             <td>
                               <strong>twenty one pilots</strong>
                             </td>
-                            <td>orange & lemons</td>
+                            <td>orange &amp; lemons</td>
                           </tr>
                         </tbody>
                       </table>
@@ -4694,7 +3588,7 @@
                         <thead>
                           <tr>
                             <th>
-                              <strong>■ ■ ■</strong> books
+                              <strong>&#9632; &#9632; &#9632;</strong> books
                             </th>
                             <th>&nbsp;</th>
                           </tr>
@@ -4723,7 +3617,7 @@
                         <thead>
                           <tr>
                             <th>
-                              <strong>■ ■ ■</strong> games
+                              <strong>&#9632; &#9632; &#9632;</strong> games
                             </th>
                             <th>&nbsp;</th>
                           </tr>
@@ -4758,7 +3652,7 @@
                         <thead>
                           <tr>
                             <th>
-                              <strong>■ ■ ■</strong> films
+                              <strong>&#9632; &#9632; &#9632;</strong> films
                             </th>
                             <th>&nbsp;</th>
                           </tr>
@@ -4789,7 +3683,7 @@
                 </div>
                 <div>
                   <p id="text12" class="text-component instance-12">
-                    <strong>■ ■ ■</strong> likes
+                    <strong>&#9632; &#9632; &#9632;</strong> likes
                   </p>
                   <hr id="divider17" class="divider-component instance-17 style-2">
                   <div id="list05" class="list-component instance-5">
@@ -4822,7 +3716,7 @@
                   </div>
                   <hr id="divider18" class="divider-component instance-18 style-1 full screen">
                   <p id="text13" class="text-component instance-13">
-                    <strong>■ ■ ■</strong> dislikes
+                    <strong>&#9632; &#9632; &#9632;</strong> dislikes
                   </p>
                   <hr id="divider19" class="divider-component instance-19 style-2">
                   <div id="list06" class="list-component instance-6">
@@ -4858,7 +3752,7 @@
                         <thead>
                           <tr>
                             <th>
-                              <strong>■ ■ ■</strong>
+                              <strong>&#9632; &#9632; &#9632;</strong>
                             </th>
                             <th>&nbsp;</th>
                           </tr>
@@ -4903,9 +3797,8 @@
             </div>
           </div>
           </section>
-          <section id="relations-section" class="inactive">
-            <div id="container05" class="container-component instance-5 default"
->
+          <section id="relations-section" class="inactive" aria-hidden="true" style="opacity: 0; visibility: hidden; pointer-events: none;">
+            <div id="container05" class="container-component instance-5 default">
               <div class="wrapper">
                 <div class="inner">
                   <h2 id="text07" class="text-component instance-7">
@@ -4918,7 +3811,7 @@
                 <hr id="divider05" class="divider-component instance-5 style-1 full screen">
                 <div id="gallery03" class="gallery-component instance-3">
                   <div class="inner">
-                    <ul id="relations-grid" class="relations-grid"></ul>
+                    <ul id="relations-grid" class="relations-grid"><li><button type="button" class="thumbnail relation-button"><span class="frame"><img src="https://file.garden/ai5LuPrOLRCONCXy/COMMISSION/HEATHAF/sid%26atlas.jpg" alt="Sid &amp; Atlas"></span></button><div class="caption"><p>Sid &amp; Atlas<br><span class="caption-handle">@sidnyve &amp; @atiastikman</span></p></div></li><li><button type="button" class="thumbnail relation-button"><span class="frame"><img src="https://file.garden/ai5LuPrOLRCONCXy/COMMISSION/HEATHAF/cae.jpg" alt="Caelum"></span></button><div class="caption"><p>Caelum<br><span class="caption-handle">@caelumnv</span></p></div></li><li><button type="button" class="thumbnail relation-button"><span class="frame"><img src="https://file.garden/ai5LuPrOLRCONCXy/COMMISSION/HEATHAF/placeholder.jpg" alt="Blank pa"></span></button><div class="caption"><p>Blank pa</p></div></li><li><button type="button" class="thumbnail relation-button"><span class="frame"><img src="https://file.garden/ai5LuPrOLRCONCXy/COMMISSION/HEATHAF/placeholder.jpg" alt="Blank pa"></span></button><div class="caption"><p>Blank pa</p></div></li></ul>
                   </div>
                 </div>
               </div>
@@ -4927,7 +3820,7 @@
           <div id="relation-modal" class="relation-modal" aria-hidden="true">
             <div class="relation-modal__backdrop" data-close="true"></div>
             <div class="relation-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="relation-modal-title">
-              <button type="button" class="relation-modal__close" aria-label="Close">×</button>
+              <button type="button" class="relation-modal__close" aria-label="Close">&#10005;</button>
               <div class="relation-modal__content">
                 <img id="relation-modal-image" class="relation-modal__image" alt="">
                 <div class="relation-modal__body">
@@ -4939,23 +3832,84 @@
             </div>
           </div>
           </section>
-          <section id="gallery-section" class="inactive">
-            <div id="container03" class="container-component instance-3 default"
->
+          <section id="gallery-section" class="inactive active" aria-hidden="false" style="opacity: 1; visibility: visible; pointer-events: auto;">
+            <div id="container03" class="container-component instance-4">
               <div class="wrapper">
                 <div class="inner">
-                  <h2 id="text04" class="text-component instance-4">
-                  <strong>t</strong>.b.a.
-                </h2>
-                <hr id="divider03" class="divider-component instance-3 style-1 full screen">
-                <div id="gallery01" class="gallery-component instance-1">
-                  <div class="inner">
-                    <p class="gallery-placeholder">t.b.a.</p>
+                  <div class="inventory-layout-grid">
+                    <div class="inventory-left-column">
+                      <div class="panel-inventory">
+                        <div class="inventory-card">
+                          <h2 id="text04" class="text-component instance-4">
+                            <strong>i</strong>nventory
+                          </h2>
+                          <hr id="divider03" class="divider-component instance-3 style-1 full screen">
+                        </div>
+                      </div>
+                      <div class="panel-chat">
+                        <iframe src="https://www3.cbox.ws/box/?boxid=3556471&amp;boxtag=0aCA0Y" width="100%" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+                      </div>
+                    </div>
+                    <div class="inventory-right-column">
+                      <div class="panel-moon">
+                        <div id="moon-widget"><div class="moon-wrap"><svg width="70" height="70" viewBox="0 0 100 100"><g><circle cx="50" cy="50" r="49" stroke="none" fill="#111111"></circle><path d="M 50 1 A 49,49 0 0,1 49,99 A -48.02,49 0 0,1 50,1" stroke-width="0" stroke="none" fill="#F5F0DC"></path><a xlink:href="https://www.icalendar37.net/lunar/app/" rel="noopener noreferrer" target="_blank"><circle cx="50" cy="50" r="49" style="pointer-events:all;cursor:pointer" stroke-width="0" fill="transparent"></circle></a></g></svg></div><span class="moon-name">Waxing</span><span class="moon-pct">99% illuminated</span></div>
+                      </div>
+                      <div class="panel-calendar">
+                        <div id="calendar-widget"><div class="cal-header"><button type="button" data-cal-nav="-1">&lt;</button><span>June 2026</span><button type="button" data-cal-nav="1">&gt;</button></div><table><tbody><tr><th>Su</th><th>M</th><th>Tu</th><th>W</th><th>Th</th><th>F</th><th>Sa</th></tr><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td class="today">29</td><td>30</td></tr></tbody></table></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="placeholders-row">
+                    <div class="panel-placeholder panel-placeholder-third">
+                      <div class="player">
+                        <div class="window">
+                          <div class="window-body">
+                            <div class="flex">
+                              <div class="wheel" style="height:70px;width:70px;">
+                                <div class="wheelcontrols">
+                                  <button class="fas fa-plus" onclick="volumeUp()" style="padding-top:4px; padding-bottom:0;"></button>
+                                </div>
+                                <table class="wheelcontrols">
+                                  <tbody><tr>
+                                    <th><button class="fas fa-backward" onclick="prevTrack()"></button></th>
+                                    <th class="innerwheel"><button class="playpause-track fas fa-play" onclick="playpauseTrack()"></button></th>
+                                    <th><button class="fas fa-forward" onclick="nextTrack()"></button></th>
+                                  </tr>
+                                </tbody></table>
+                                <div class="wheelcontrols" style="padding:0;">
+                                  <button class="fas fa-minus" onclick="volumeDown()"></button>
+                                </div>
+                              </div>
+                              <div id="musicplayer">
+                                <div class="flex">
+                                  <marquee scrollamount="4" class="songtitle">One Shot One Kill - The Cat's Whiskers</marquee>
+                                </div>
+                                <div class="seeking">
+                                  <div class="current-time">0:00</div>
+                                  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                  <div class="total-duration">0:00</div>
+                                </div>
+                                <table class="controls">
+                                  <tbody><tr>
+                                    <td><button><div class="fas fa-sync"></div></button></td>
+                                    <td><button><div class="fas fa-music"></div></button></td>
+                                    <td><button><div class="fas fa-random"></div></button></td>
+                                  </tr>
+                                </tbody></table>
+                                <audio id="music" src="https://files.catbox.moe/fegzmf.mp3"></audio>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-placeholder">
+                      <p class="gallery-placeholder">more inventory coming soon</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
           </section>
         </div>
       </div>
@@ -5002,6 +3956,10 @@
       animation: contentFadeIn 0.24s ease both;
     }
 
+    #home-section {
+      padding-top: 0.5rem;
+    }
+
     @keyframes contentFadeIn {
       from {
         opacity: 0;
@@ -5030,6 +3988,133 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: rgb(120, 120, 120);
+    }
+
+    #container03>.wrapper>.inner {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      position: relative;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .inventory-layout-grid {
+      display: grid !important;
+      grid-template-columns: minmax(0, 2.05fr) minmax(0, 0.95fr);
+      gap: 0.35rem;
+      margin-top: 0rem;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box;
+      align-items: start;
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+    }
+
+    .inventory-left-column,
+    .inventory-right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      min-width: 0;
+    }
+
+    .panel-inventory,
+    .panel-chat,
+    .panel-moon,
+    .panel-calendar {
+      background: #ffffff;
+      border-radius: 0;
+      box-sizing: border-box;
+      position: relative;
+      min-width: 0;
+      width: 100% !important;
+      display: block;
+      padding: 0.45rem 0.7rem 0.6rem;
+    }
+
+    .placeholders-row {
+      display: flex;
+      gap: 0.35rem;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box;
+      margin-top: 0.35rem;
+      padding: 0;
+    }
+
+    .panel-placeholder {
+      background: #ffffff;
+      border-radius: 0;
+      box-sizing: border-box;
+      position: relative;
+      min-width: 0;
+      display: block;
+      padding: 0.45rem 0.7rem 0.6rem;
+      flex: 0 0 calc(68.34% - 0.175rem);
+    }
+
+    .panel-placeholder-third {
+      flex: 0 0 calc(31.66% - 0.175rem);
+    }
+
+    .inventory-card {
+      display: block;
+    }
+
+    .inventory-card h2,
+    .inventory-card hr {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .inventory-card h2 {
+      margin: 0 0 0.6rem 0;
+    }
+
+    .inventory-card hr,
+    #container03 hr {
+      display: none !important;
+      border: 0 !important;
+      height: 0 !important;
+      opacity: 0 !important;
+      margin: 0 !important;
+    }
+
+    #container03 iframe {
+      display: block;
+      width: 100%;
+      min-height: 200px;
+      height: 200px;
+      border: 0;
+      border-radius: 0.25rem;
+      background: transparent;
+    }
+
+    .panel-chat iframe {
+      height: 300px !important;
+      min-height: 300px !important;
+      max-height: 300px !important;
+    }
+
+    #container03 #moon-widget,
+    #container03 #calendar-widget {
+      width: 100%;
+    }
+
+    .panel-moon {
+      height: 9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .panel-calendar {
+      height: 8.72rem;
     }
 
     .relations-grid {
@@ -5112,6 +4197,89 @@
       color: rgb(120, 120, 120);
       font-style: italic;
       font-family: "DM Sans", "Arial", sans-serif;
+    }
+
+    #calendar-widget table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "DM Sans", "Arial", sans-serif;
+      font-size: 0.7rem;
+      color: rgb(60, 60, 60);
+    }
+    #calendar-widget th {
+      padding: 0.15rem 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.55rem;
+      text-transform: uppercase;
+      color: rgb(130, 130, 130);
+      letter-spacing: 0.05em;
+    }
+    #calendar-widget td {
+      padding: 0.15rem 0;
+      text-align: center;
+      font-size: 0.65rem;
+      border-radius: 0.2rem;
+    }
+    #calendar-widget td.today {
+      background: rgb(230, 230, 230);
+      font-weight: 700;
+    }
+    #calendar-widget .cal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.3rem;
+      font-family: "DM Sans", "Arial", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: rgb(60, 60, 60);
+    }
+    #calendar-widget .cal-header button {
+      background: none;
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 0.15rem;
+      padding: 0.05rem 0.3rem;
+      cursor: pointer;
+      font-size: 0.6rem;
+      color: rgb(100, 100, 100);
+      font-family: "DM Sans", "Arial", sans-serif;
+    }
+    #calendar-widget .cal-header button:hover {
+      background: rgb(240, 240, 240);
+      color: rgb(60, 60, 60);
+    }
+
+    #moon-widget {
+      text-align: center;
+      font-family: "DM Sans", "Arial", sans-serif;
+      margin-top: 0;
+    }
+    #moon-widget .moon-wrap {
+      line-height: 0;
+      filter: drop-shadow(rgb(255, 200, 150) 0px 0px 24px);
+    }
+    #moon-widget::after {
+      content: none;
+      display: none !important;
+      border: 0 !important;
+      margin: 0 !important;
+      width: 0 !important;
+      height: 0 !important;
+    }
+    #moon-widget .moon-name {
+      display: block;
+      margin-top: 0.15rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: rgb(60, 60, 60);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    #moon-widget .moon-pct {
+      display: block;
+      font-size: 0.55rem;
+      color: rgb(130, 130, 130);
     }
 
     .relation-modal {
@@ -5248,27 +4416,290 @@
       color: rgb(82, 82, 82);
     }
 
-    @media (max-width: 900px) {
-      .relations-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+    
+
+    
+
+    /* Music Player Styles */
+    @font-face {
+      font-family: "Myriad Pro";
+      src: url("https://dl.dropbox.com/scl/fi/z8hqw29h8a9i3a3cbbxkt/MYRIADPRO-REGULAR.OTF?rlkey=begwqxljs2gzyw26h00oeovzi&st=px0mbeax&dl=0") format("woff");
     }
 
-    @media (max-width: 600px) {
-      .relation-modal__content {
-        flex-direction: column;
-      }
+    .player {
+      width: fit-content;
+      border: #CECECE solid 2px;
+      border-radius: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(230,230,230,1) 30%, rgba(255,255,255,1) 100%);
+      padding: 3px;
+    }
 
-      .relation-modal__image {
-        width: 100%;
-        height: 13rem;
-      }
+    .player .window, 
+    .player .title-bar {
+      font-family: "Myriad Pro";
+      -webkit-font-smoothing: none;
+      font-size: 9px;
+    }
+
+    .player .window {
+      padding: 6px;
+      width: 220px;
+    }
+
+    .player .window-body {
+      display: block;
+      margin: auto;
+      border-radius: 0em;
+    }
+
+    .player .flex {
+      display: flex;
+    }
+
+    .player .wheel {
+      display: block;
+      justify-content: center;
+      margin: auto;
+      background: linear-gradient(white, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+      border-radius: 50em;
+      border: 2px solid transparent;
+      padding-top: 0px;
+      box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+      -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+      -moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+    }
+
+    .player .innerwheel {
+      border-radius: 50em;
+      border: 2px solid #E2E2E2;
+      padding: 6px;
+      padding-left: 8px;
+      padding-right: 9px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+      -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+      -moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+    }
+
+    .player th {
+      width: auto;
+      margin: 0 1px;
+      padding: 0;
+      border: none;
+      background: transparent;
+    }
+
+    .player .wheelcontrols {
+      font-size: 11px !important;
+      text-align: center;
+      padding-top: 1px;
+      color: #aaa;
+      opacity: 0.8;
+      border: none;
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .player .wheelcontrols table {
+      border-collapse: collapse;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .player .wheelcontrols tr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .player .wheelcontrols button {
+      background: none !important;
+      border: none !important;
+      color: #aaa;
+      opacity: 0.6;
+      font-size: 11px;
+      padding: 1px;
+      cursor: pointer;
+      width: auto;
+      height: auto;
+      min-width: 0;
+      text-shadow: none;
+    }
+
+    .player .wheelcontrols button:hover {
+      opacity: 1;
+    }
+
+    .player .playpause-track {
+      font-size: 16px !important;
+      padding: 2px;
+      background: none !important;
+      border: none !important;
+    }
+
+    #musicplayer {
+      display: block;
+      float: right;
+      background: linear-gradient(0deg, #FFEBD9, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+      border-radius: 60em;
+      border: 2px solid transparent;
+      margin-left: 6px;
+      padding-left: 8px;
+      box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+      -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+      -moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+    }
+
+    .player .songtitle {
+      padding: 10px;
+      padding-bottom: 0;
+      color: #A3A3A3;
+      margin-left: 8px;
+      margin-right: 8px;
+      font-size: 10px;
+      display: block;
+      font-family: Myriad Pro;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .player .seeking {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 6px;
+      padding-left: 0;
+      padding-bottom: 0px;
+      color: #A3A3A3;
+      font-size: 9px;
+    }
+
+    .player .current-time {
+      padding-right: 5px;
+    }
+
+    .player .total-duration {
+      padding-left: 5px;
+    }
+
+    .player .flex {
+      display: flex;
+      width: 100%;
+      min-width: 0;
+    }
+
+    #musicplayer .flex {
+      width: 100%;
+      min-width: 0;
+    }
+
+    marquee.songtitle {
+      width: 100%;
+      display: block;
+    }
+
+    .player .seek_slider {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      height: 6px;
+      background: #D4B89C;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .player .seek_slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 8px;
+      height: 8px;
+      background: white;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 1px solid #cecece;
+      padding-top: 3px;
+      position: relative;
+      bottom: 3px;
+    }
+
+    .player .seek_slider::-moz-range-thumb {
+      width: 8px;
+      height: 8px;
+      background: white;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 1px solid #cecece;
+    }
+
+    .player .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      margin-left: 0;
+      border: none;
+      background: transparent;
+      padding: 0;
+      width: 100%;
+    }
+
+    .player .controls button {
+      display: block;
+      font-size: 11px !important;
+      text-align: center;
+      color: #D4B89C;
+      opacity: 0.7;
+      background: none !important;
+      border: none !important;
+      cursor: pointer;
+      padding: 2px;
+      width: auto;
+      min-width: 0;
+      text-shadow: none;
+    }
+
+    .player .controls button:hover {
+      opacity: 1;
+    }
+
+    .player .controls button:hover {
+      opacity: 1;
+    }
+
+    .player button {
+      min-width: 20px;
+      background: none;
+      text-align: center;
+    }
+
+    .player button:active {
+      opacity: 0.7;
+    }
+
+    #music {
+      display: none;
     }
   </style>
 
-  <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-       SECTION NAVIGATION — animates header/section transitions
-  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+  <!-- --- -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       function updateHeaderReadout() {
@@ -5290,7 +4721,7 @@
         }
 
         if (weatherElement && weatherElement.dataset.fallback === 'true') {
-          weatherElement.textContent = '☀️ 30°C';
+          weatherElement.textContent = '\u2600\uFE0F 30\u00B0C';
         }
       }
 
@@ -5304,35 +4735,35 @@
           })
           .then(function (data) {
             if (!data || !data.current_weather) {
-              weatherElement.textContent = '☀️ 30°C';
+              weatherElement.textContent = '\u2600\uFE0F 30\u00B0C';
               weatherElement.dataset.fallback = 'true';
               return;
             }
 
             var temp = Math.round(data.current_weather.temperature);
             var code = data.current_weather.weathercode;
-            var emoji = '☀️';
-            var text = temp + '°C';
+            var emoji = '\u2600\uFE0F';
+            var text = temp + '\u00B0C';
 
             if (code === 1 || code === 2) {
-              emoji = '⛅';
+              emoji = '\u26C5';
             } else if (code === 3) {
-              emoji = '☁️';
+              emoji = '\u2601\uFE0F';
             } else if (code >= 45 && code <= 48) {
-              emoji = '🌫️';
+              emoji = '\uD83C\uDF2B\uFE0F';
             } else if (code >= 51 && code <= 67) {
-              emoji = '🌧️';
+              emoji = '\uD83C\uDF27\uFE0F';
             } else if (code >= 71 && code <= 86) {
-              emoji = '❄️';
+              emoji = '\u2744\uFE0F';
             } else if (code >= 95) {
-              emoji = '⛈️';
+              emoji = '\u26C8\uFE0F';
             }
 
             weatherElement.textContent = emoji + ' ' + text;
             weatherElement.dataset.fallback = 'false';
           })
           .catch(function () {
-            weatherElement.textContent = '☀️ 30°C';
+            weatherElement.textContent = '\u2600\uFE0F 30\u00B0C';
             weatherElement.dataset.fallback = 'true';
           });
       }
@@ -5748,7 +5179,6 @@
 
         requestAnimationFrame(function () {
           setContentStageHeight(sectionId);
-          setHeaderOffset(sectionId);
         });
 
         window.setTimeout(function () {
@@ -5800,7 +5230,227 @@
       fetchHeaderWeather();
       setInterval(fetchHeaderWeather, 600000);
 
+      (function () {
+        var calMonth = new Date().getMonth();
+        var calYear = new Date().getFullYear();
+        var today = new Date();
+        var monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+        function renderCalendar() {
+          var el = document.getElementById('calendar-widget');
+          if (!el) return;
+          var daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+          var firstDay = new Date(calYear, calMonth, 1).getDay();
+          var html = '<div class="cal-header">' +
+            '<button type="button" data-cal-nav="-1">&lt;</button>' +
+            '<span>' + monthNames[calMonth] + ' ' + calYear + '</span>' +
+            '<button type="button" data-cal-nav="1">&gt;</button>' +
+            '</div><table><tr>';
+          for (var d = 0; d < 7; d++) {
+            html += '<th>' + ['Su','M','Tu','W','Th','F','Sa'][d] + '</th>';
+          }
+          html += '</tr><tr>';
+          for (var i = 0; i < firstDay; i++) html += '<td></td>';
+          for (var day = 1; day <= daysInMonth; day++) {
+            var cls = (calYear === today.getFullYear() && calMonth === today.getMonth() && day === today.getDate()) ? ' class="today"' : '';
+            html += '<td' + cls + '>' + day + '</td>';
+            if ((day + firstDay) % 7 === 0 && day < daysInMonth) html += '</tr><tr>';
+          }
+          html += '</tr></table>';
+          el.innerHTML = html;
+        }
+
+        document.addEventListener('click', function (e) {
+          var btn = e.target.closest('[data-cal-nav]');
+          if (btn) {
+            calMonth += parseInt(btn.getAttribute('data-cal-nav'), 10);
+            if (calMonth > 11) { calMonth = 0; calYear++; }
+            if (calMonth < 0) { calMonth = 11; calYear--; }
+            renderCalendar();
+          }
+        });
+
+        renderCalendar();
+      })();
+
+      (function () {
+        var moonWidget = document.getElementById('moon-widget');
+        if (!moonWidget) return;
+
+        function renderFallback() {
+          moonWidget.innerHTML =
+            '<div class="moon-wrap"><svg width="90" height="90" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" fill="rgb(173,173,173)"></circle><path d="M 50 6 A 44,44 0 1,1 50 94 A 33,33 0 1,0 50 6" fill="rgb(255,253,245)"></path></svg></div>' +
+            '<span class="moon-name">moon phase</span>' +
+            '<span class="moon-pct">current phase</span>';
+        }
+
+        renderFallback();
+
+        var now = new Date();
+        var cfg = {
+          lang: 'en',
+          month: now.getMonth() + 1,
+          year: now.getFullYear(),
+          size: 70,
+          lightColor: '#F5F0DC',
+          shadeColor: '#111111',
+          texturize: false,
+          LDZ: new Date(now.getFullYear(), now.getMonth(), 1) / 1000
+        };
+        var params = [];
+        for (var k in cfg) params.push(k + '=' + encodeURIComponent(cfg[k]));
+        fetch('https://www.icalendar37.net/lunar/api/?' + params.join('&'))
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            var day = now.getDate();
+            var ph = data.phase[day];
+            if (!ph) return;
+            moonWidget.innerHTML =
+              '<div class="moon-wrap">' + ph.svg + '</div>' +
+              '<span class="moon-name">' + ph.phaseName + '</span>' +
+              '<span class="moon-pct">' + Math.round(ph.lighting) + '% illuminated</span>';
+          })
+          .catch(function () {
+            renderFallback();
+          });
+      })();
+
+      // Music Player Script
+      let track_name = document.querySelector(".songtitle");
+      let playpause_btn = document.querySelector(".playpause-track");
+      let seek_slider = document.querySelector(".seek_slider");
+      let curr_time = document.querySelector(".current-time");
+      let total_duration = document.querySelector(".total-duration");
+      let track_index = 0;
+      let isPlaying = false;
+      let updateTimer;
+      let curr_track = document.getElementById("music");
+      
+      let track_list = [{
+          name: "One Shot One Kill - The Cat's Whiskers",
+          path: "https://files.catbox.moe/fegzmf.mp3"
+        },
+        {
+          name: "Shooting Arrows - The Cat's Whiskers",
+          path: "https://files.catbox.moe/zj81lr.mp3"
+        },
+        {
+          name: "4 REAL - The Cat's Whiskers",
+          path: "https://files.catbox.moe/fxd8fo.mp3"
+        },
+        {
+          name: "My Sweetest Love - The Cat's Whiskers ft. Kazuma Mitchell",
+          path: "https://files.catbox.moe/qe4he5.mp3"
+        },
+        {
+          name: "Mercy On Me - The Cat's Whiskers",
+          path: "https://files.catbox.moe/w7nnf9.mp3"
+        }
+      ];
+
+      function loadTrack(track_index) {
+        clearInterval(updateTimer);
+        resetValues();
+        curr_track.src = track_list[track_index].path;
+        curr_track.load();
+        track_name.textContent = track_list[track_index].name;
+        updateTimer = setInterval(seekUpdate, 1000);
+        curr_track.addEventListener("ended", nextTrack);
+      }
+
+      function resetValues() {
+        curr_time.textContent = "0:00";
+        total_duration.textContent = "0:00";
+        seek_slider.value = 0;
+      }
+
+      function playpauseTrack() {
+        if (!isPlaying) playTrack();
+        else pauseTrack();
+      }
+
+      function playTrack() {
+        curr_track.play();
+        isPlaying = true;
+        let playButton = document.querySelector(".playpause-track");
+        playButton.className = "playpause-track fas fa-pause";
+      }
+
+      function pauseTrack() {
+        curr_track.pause();
+        isPlaying = false;
+        let playButton = document.querySelector(".playpause-track");
+        playButton.className = "playpause-track fas fa-play";
+      }
+
+      function nextTrack() {
+        if (track_index < track_list.length - 1)
+          track_index += 1;
+        else track_index = 0;
+        loadTrack(track_index);
+        if (isPlaying) playTrack();
+      }
+
+      function prevTrack() {
+        if (track_index > 0)
+          track_index -= 1;
+        else track_index = track_list.length;
+        loadTrack(track_index);
+        if (isPlaying) playTrack();
+      }
+
+      var audio = document.getElementById("music");
+      var currentVolume = audio.volume;
+
+      function volumeUp() {
+        if (currentVolume < 1.0) {
+          currentVolume += 0.2;
+          audio.volume = currentVolume;
+        }
+      }
+
+      function volumeDown() {
+        if (currentVolume > 0.0) {
+          currentVolume -= 0.2;
+          audio.volume = currentVolume;
+        }
+      }
+
+      function seekTo() {
+        seekto = curr_track.duration * (seek_slider.value / 100);
+        curr_track.currentTime = seekto;
+      }
+
+      function seekUpdate() {
+        let seekPosition = 0;
+        if (!isNaN(curr_track.duration)) {
+          seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+          seek_slider.value = seekPosition;
+          let currentMinutes = Math.floor(curr_track.currentTime / 60);
+          let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+          let durationMinutes = Math.floor(curr_track.duration / 60);
+          let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+          if (currentSeconds < 10) {
+            currentSeconds = "0" + currentSeconds;
+          }
+          if (durationSeconds < 10) {
+            durationSeconds = "0" + durationSeconds;
+          }
+          if (currentMinutes < 10) {
+            currentMinutes = currentMinutes;
+          }
+          if (durationMinutes < 10) {
+            durationMinutes = durationMinutes;
+          }
+          curr_time.textContent = currentMinutes + ":" + currentSeconds;
+          total_duration.textContent = durationMinutes + ":" + durationSeconds;
+        }
+      }
+
+      loadTrack(track_index);
+
     });
   </script>
-</body>
-</html>
+
+</body></html>
+
